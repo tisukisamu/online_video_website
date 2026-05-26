@@ -1,0 +1,74 @@
+/* Modern Dark Minimalist Theme (Douyin Style) */
+:root {
+  --primary-color: #fe2c55;
+  --bg-color: #000000;
+  --bg-secondary: #161823;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --border-color: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #app {
+  font-family: 'PingFang SC', 'HarmonyOS Sans', 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ant Design Vue Dark Theme Overrides */
+.ant-btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(254, 44, 85, 0.2);
+}
+
+.ant-btn-primary:hover {
+  background-color: #e6254c !important;
+  border-color: #e6254c !important;
+}
+
+.ant-input, .ant-input-password {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 0px; background: transparent; }
+
+/* Dark Drawer Override */
+.dark-drawer .ant-drawer-content {
+  background-color: #161823 !important;
+  color: #fff !important;
+}
+.dark-drawer .ant-drawer-header {
+  background-color: #161823 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+.dark-drawer .ant-drawer-title {
+  color: #fff !important;
+}
+.dark-drawer .ant-drawer-close {
+  color: #fff !important;
+}
+.dark-drawer .ant-drawer-body {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
